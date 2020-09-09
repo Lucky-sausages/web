@@ -164,7 +164,18 @@
   background-color: #4bb34b;
   color: #fff;
 }
-
+.Place__order_inactive {
+  flex-grow: 1;
+  height: 65px;
+  border: 0;
+  border-radius: 25px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  background-color: #8ab37d;
+  color: #fff;
+}
 .Place__products-wrapper {
   position: relative;
 }
