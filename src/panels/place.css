@@ -175,6 +175,7 @@
   font-size: 22px;
   background-color: #8ab37d;
   color: #fff;
+  pointer-events: none;
 }
 .Place__products-wrapper {
   position: relative;

@@ -101,10 +101,8 @@ const Place = ({ item, order, onIncrementPosition, onDecrementPosition, area }) 
         )))}
       </ul>
       <footer className="Place__footer">
-        <div className="Place__order_inactive"  style={{ display: price <= 0 ? "block" : "none" }}>
-          Оформить заказ ({price})
-        </div>
-        <Link to={`/basket/${area.id}/${item.id}`} className="Place__order" style={{ display: price > 0? "block" : "none" }}>
+        <Link to={`/basket/${area.id}/${item.id}`}
+              className={ price <= 0 ? "Place__order_inactive" : "Place__order"} >
           Оформить заказ ({price})
         </Link>
       </footer>
